@@ -9,4 +9,4 @@ Model_And_Testing_Base.ipynb : Alex Thiesmeyer
 
 DataAugmentation.ipynb : Alex Benanti 
 
--This file augments the training data used in the model and testing to create new data that can be used for further model training via the CutBlur and Cutout algorithms. The file should operate properly by simply running the commands given that the data is properly installed into the notebook you are running on (same as with the model and testing). 
+- This file augments the training data used in the model and testing to create new data that can be used for further model training via the CutBlur and Cutout algorithms. The file should operate properly by simply running the commands given that the data is properly installed into the notebook you are running on (same as with the model and testing). 
