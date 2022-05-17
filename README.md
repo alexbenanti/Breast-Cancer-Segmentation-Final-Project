@@ -14,4 +14,4 @@ DataAugmentation.ipynb : Alex Benanti
 
 Transfer_Learning: Ronan Manvelian
 
-- This file slightly refactors the code Alex T. wrote and performs five different transfer learning methodologies that involve the freezing and fine-tuning of entire layers, as well as specific layer parameters, of our DeepLabV3 model. The transfer learning learning results should be easily obtainable by simply running the commands in the notebook cells.
+- This file slightly refactors the code Alex T. wrote and performs five different transfer learning methodologies that involve the freezing and fine-tuning of entire layers, as well as specific layer parameters, of our DeepLabV3 model. The transfer learning results should be easily obtainable by simply running the commands in the notebook cells.
