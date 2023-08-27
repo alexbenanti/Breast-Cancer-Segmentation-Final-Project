@@ -1,17 +1,9 @@
 # Breast-Cancer-Segmentation-Final-Project
 
-Code Contribution
+Ever since the conception of machine learning algorithms, it has been a goal of A.I. researchers to discover how artificial intelligence can be used to treat widespread epidemics across both the United States and the world. This begs the question: given that doctors are already so efficient and well-trained at what they do, why is there a need for medical treatment operated entirely by machine learning? The main reason is affordability; a staggering amount of Americans (about 1 in 5) can't afford the care they need \cite{Vaidya}. With significant breakthroughs in A.I. operated medical care, though, the cost of medical care can drastically decrease, and, in turn, providing millions of Americans with a heightened sense of security as far as their health is concerned. 
+This is a lot easier said than done, though. This has been an area of research for computer scientists and machine learning researchers for decades, and, still, only the surface has been scratched when it comes to unlocking the full potential of intersecting A.I. and medicine.
 
-Model_And_Testing_Base.ipynb : Alex Thiesmeyer
-
-- This file is currently set up to fine-tune and test a pretrained DeepLabV3 model with weighted cross-entropy loss in Google Colab. The data can be found at https://drive.google.com/drive/folders/1zqbdkQF8i5cEmZOGmbdQm-EP8dRYtvss and must be loaded onto the user's local drive.
-
-
-DataAugmentation.ipynb : Alex Benanti 
-
-- This file augments the training data used in the model and testing to create new data that can be used for further model training via the CutBlur and Cutout algorithms. The file should operate properly by simply running the commands given that the data is properly installed into the notebook you are running on (same as with the model and testing).
+How do we decide which medical ailments to conquer in the quest for ``automating healthcare". Given that each year, 1.6 million Americans are diagnosed with some form of cancer and 600,000 die from it \cite{cdc}, we figured that tackling the plague on society that is cancer would be a great place to start. Cancer is a very general disease, though, with many different sub-classes. For the sake of this project, we sought to hone in on just one of theses sub-classes: breast cancer. When it comes to treating breast cancer, perhaps the most critical part of the process is the first step: finding and diagnosing tumors. This is the part of the process we seek to automate using machine learning and computer vision techniques. To be more specific, we seek to develop a deep learning model that can take an image of an image of breast cancer tissue and, from that, segment the image by cell type-- tumor, necrosis, inflammatory infiltrates, stroma, and others. 
 
 
-Transfer_Learning.ipynb: Ronan Manvelian
-
-- This file slightly refactors the code Alex T. wrote and performs five different transfer learning methodologies that involve the freezing and fine-tuning of entire layers, as well as specific layer parameters, of our DeepLabV3 model. The transfer learning results should be easily obtainable by simply running the commands in the notebook cells.
+We sought to accomplish this using a deep learning model with a DeepLab structure with a ResNet-50 backbone trained on a dataset of 151 image and mask pairings. 
